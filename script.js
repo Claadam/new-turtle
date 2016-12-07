@@ -18,6 +18,11 @@ $("#star-ring-button").click(function() {
   nStarRing(typeOfStarRing)
 })
 
+$("#ring-button").click(function() { 
+  var typeOfRing = $("#ring").val()
+  drawRing(typeOfRing)
+})
+
 
 function nPoints(n) {
   for (i=0; i<n; i++) {
@@ -56,9 +61,9 @@ function nStarRing(n) {
 }
 
 function nNinjaStar(n) {
-  for for (j=0; j<360/n; j++){
+  for (j=0; j<n; j++){
     goForward(180/n)
-    nDegreesLeft((720/n)+1)
+    nDegreesLeft((720/n))
     goForward(360/n)
     nDegreesRight((360/n))
   }  
