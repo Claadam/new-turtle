@@ -13,6 +13,9 @@ function nPoints(n) {
     goForward(360/n)
     nDegreesLeft(720/n)
   }
+  nDegreesLeft(180)
+  goForward(360/n)
+  nDegreesLeft(180)
 }
 
 function nSides(n) {
