@@ -24,13 +24,22 @@ function nSides(n) {
   }
 }
 
- for (i=0; i<4; i++) {
-   goForward(90)
-   nDegreesLeft(90)}
+// for (i=0; i<4; i++) {
+//   goForward(90)
+//   nDegreesLeft(90)}
 
-for (j=0; j<90; j++){
-  goForward(90)
-  nDegreesLeft(90+1)
-}
+for (i=0; i<3; i++) {
+  goForward(0)
+  nDegreesLeft(90)}
+
+//for (j=0; j<90; j++){
+//  goForward(90)
+//  nDegreesLeft(90+1)
+//}
   
+for (j=0; j<120; j++){
+  goForward(120)
+  nDegreesLeft(120+1)
+}
+
 
