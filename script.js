@@ -23,12 +23,14 @@ function nSides(n) {
   nDegreesLeft(360/n)
   }
 }
- for (j=0; j<4; j++){
-   goForward(90)
-   nDegreesLeft(90+(j*7.5))
+
  for (i=0; i<4; i++) {
    goForward(90)
    nDegreesLeft(90)}
- }
+
+for (j=0; j<16; j++){
+  goForward(90)
+  nDegreesLeft(90+(j*5))
+}
   
 
