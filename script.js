@@ -15,7 +15,7 @@ $("#ring-button").click(function() {
 
 $("#star-ring-button").click(function() { 
   var typeOfStarRing = $("#star-ring").val()
-  nStarRing(typeOfRingRing)
+  nStarRing(typeOfStarRing)
 })
 
 
@@ -49,9 +49,9 @@ function drawRing(n) {
 function nStarRing(n) {
   for (i=0; i<n; i++) {
     goForward(360/n)
-    nDegreesLeft((720/n)+1)
+    nDegreesLeft((720/n))
     goForward(360/n)
-    nDegreesRight((360/n)+1)
+    nDegreesRight((360/n))
   }
 }
 
