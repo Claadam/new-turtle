@@ -29,16 +29,16 @@ function nSides(n) {
 //   nDegreesLeft(90)}
 
 for (i=0; i<3; i++) {
-  goForward(0)
-  nDegreesLeft(90)}
+  goForward(60)
+  nDegreesLeft(120)}
 
 //for (j=0; j<90; j++){
 //  goForward(90)
 //  nDegreesLeft(90+1)
 //}
   
-for (j=0; j<120; j++){
-  goForward(120)
+for (j=0; j<60; j++){
+  goForward(60)
   nDegreesLeft(120+1)
 }
 
