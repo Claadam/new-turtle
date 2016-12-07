@@ -7,8 +7,12 @@ function turnRight() {
   heading = heading + 90  
 }
 
-function turnLeft() {
-  heading = heading - 90  
+function nDegreesRight(n) {
+  heading = heading + n  
+}
+
+function nDegreesLeft(n) {
+  heading = heading - n  
 }
 
 function goForward(distance) {    
