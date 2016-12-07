@@ -8,7 +8,12 @@ $("#star-button").click(function() {
   nPoints(numberOfSides)
 })
 
-
+function nPoints(n) {
+  for (i=0; i<n; i++) {
+    goForward(360/n)
+    nDegreesLeft(720/n)
+  }
+}
 
 function nSides(n) {
   for (i=0; i<n; i++) {
