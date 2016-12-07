@@ -1,7 +1,13 @@
 $("#polygon-button").click(function() { 
-  $("#polygon") = numberOfSides
+  var numberOfSides = $("#polygon").val()
   nSides(numberOfSides)
 })
+
+$("#star-button").click(function() { 
+  var numberOfSides = $("#star").val()
+  nPoints(numberOfSides)
+})
+
 
 
 function nSides(n) {
