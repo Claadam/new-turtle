@@ -47,12 +47,14 @@ function drawRing(n) {
 }
 
 function nStarRing(n) {
-  for (j=0; j<360/n; j++){
+  for (j=0; j<(360/n)-1; j++){
     goForward(180/n)
     nDegreesLeft((720/n)+1)
     goForward(360/n)
     nDegreesRight((360/n))
   }
+  goForward(180/n)
+  nDegreesLeft((720/n)+1)
 }
 
 // for (i=0; i<4; i++) {
