@@ -1,4 +1,4 @@
-$("#polygon-button").onClick {
+$("#polygon-button").onClick=function(){
   $("#polygon") = numberOfSides
   nSides(numberOfSides)
 }
@@ -10,4 +10,3 @@ function nSides(n) {
   }
 }
 
-nSides(10)
