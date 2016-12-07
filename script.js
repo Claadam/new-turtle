@@ -4,8 +4,8 @@ $("#polygon-button").click(function() {
 })
 
 $("#star-button").click(function() { 
-  var numberOfSides = $("#star").val()
-  nPoints(numberOfSides)
+  var numberOfPoints = $("#star").val()
+  nPoints(numberOfPoints)
 })
 
 function nPoints(n) {
@@ -16,9 +16,9 @@ function nPoints(n) {
 }
 
 function nSides(n) {
-  nDegreesLeft(180)
-  goForward(180/n)
-  nDegreesLeft(180)
+//  nDegreesLeft(180)
+//  goForward(180/n)
+//  nDegreesLeft(180)
   for (i=0; i<n; i++) {
   goForward(360/n)
   nDegreesLeft(360/n)
