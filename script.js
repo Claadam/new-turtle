@@ -9,17 +9,17 @@ $("#star-button").click(function() {
 })
 
 function nPoints(n) {
-  for (i=0; i<n/2; i++) {
+  for (i=0; i<n; i++) {
     goForward(360/n)
     nDegreesLeft(720/n)
     goForward(360/n)
-    nDegreesLeft(360/n)
+    nDegreesRight(360/n)
   }
 }
 
 function nSides(n) {
   for (i=0; i<n; i++) {
-  goForward(360/n)
+  goForward(720/n)
   nDegreesLeft(360/n)
   }
 }
