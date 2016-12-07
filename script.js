@@ -25,7 +25,11 @@ function nSides(n) {
 }
 
 functino weirdSquare {
- for (i=0; i<16; i++)
-   goForward
+ for (i=0; i<4; i++)
+   goForward(90)
+   nDegreesLeft(90)
+  for (i=0; i<12; i++)
+     goForward(90)
+     nDegreesLeft(90+i)
 }
 
