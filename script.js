@@ -14,8 +14,8 @@ $("#ring-button").click(function() {
 })
 
 $("#star-ring-button").click(function() { 
-  var typeOfRing = $("#ring").val()
-  drawRing(typeOfRing)
+  var typeOfStarRing = $("#star-ring").val()
+  nStarRing(typeOfRingRing)
 })
 
 
