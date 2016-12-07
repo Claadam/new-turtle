@@ -28,7 +28,7 @@ function nSides(n) {
    goForward(90)
    nDegreesLeft(90)}
 
-for (j=0; j<360; j++){
+for (j=0; j<90; j++){
   goForward(90)
   nDegreesLeft(90+1)
 }
