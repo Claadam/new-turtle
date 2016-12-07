@@ -9,9 +9,11 @@ $("#star-button").click(function() {
 })
 
 function nPoints(n) {
-  for (i=0; i<n; i++) {
+  for (i=0; i<n/2; i++) {
     goForward(360/n)
     nDegreesLeft(720/n)
+    goForward(360/n)
+    nDegreesLeft(360/n)
   }
 }
 
