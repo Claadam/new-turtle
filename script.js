@@ -24,6 +24,12 @@ function nSides(n) {
   }
 }
 
+function drawRight(n) {
+  for (i=0; i<n; i++) {
+    goForward(360/n)
+    nDegreesLeft(120)}
+}
+
 // for (i=0; i<4; i++) {
 //   goForward(90)
 //   nDegreesLeft(90)}
@@ -37,7 +43,7 @@ for (i=0; i<3; i++) {
 //  nDegreesLeft(90+1)
 //}
   
-for (j=0; j<60; j++){
+for (j=0; j<120; j++){
   goForward(60)
   nDegreesLeft(120+1)
 }
