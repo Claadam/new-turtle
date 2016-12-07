@@ -8,6 +8,8 @@ $("#star-button").click(function() {
   nPoints(numberOfPoints)
 })
 
+
+
 function nPoints(n) {
   for (i=0; i<n; i++) {
     goForward(360/n)
@@ -24,10 +26,15 @@ function nSides(n) {
   }
 }
 
-function drawRight(n) {
+function drawRing(n) {
   for (i=0; i<n; i++) {
     goForward(360/n)
-    nDegreesLeft(120)}
+    nDegreesLeft(360/n)
+  }
+  for (j=0; j<360/n; j++){
+    goForward(360/n)
+    nDegreesLeft((360/n)+1)
+  }
 }
 
 // for (i=0; i<4; i++) {
@@ -37,6 +44,7 @@ function drawRight(n) {
 for (i=0; i<3; i++) {
   goForward(60)
   nDegreesLeft(120)}
+
 
 //for (j=0; j<90; j++){
 //  goForward(90)
