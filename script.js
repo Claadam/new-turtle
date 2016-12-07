@@ -24,14 +24,12 @@ function nSides(n) {
   }
 }
 
-function weirdSquare {
  for (i=0; i<4; i++) {
    goForward(90)
    nDegreesLeft(90)}
   for (i=0; i<12; i++) {
      goForward(90)
      nDegreesLeft(90+(i*7.5))}
-}
 
-weirdSquare()
+
 
