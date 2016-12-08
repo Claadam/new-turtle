@@ -20,7 +20,7 @@ $("#star-ring-button").click(function() {
 
 $("#spiral-button").click(function() { 
   var typeOfSpiral = $("#spiral").val()
-  nNinjaStar(typeOfNinjaStar)
+  nSpiral(typeOfSpiral)
 })
 
 
@@ -60,10 +60,19 @@ function nStarRing(n) {
   }
 }
 
-function nNinjaStar(n) {
+function nSpiral(n) {
   for (j=0; j<n; j++){
     goForward(180/n)
     nDegreesLeft((720/n))
+    goForward(360/n)
+    nDegreesRight((360/n))
+  }  
+}
+
+function nSpiralRing(n) {
+  for (j=0; j<360/n; j++){
+    goForward(180/n)
+    nDegreesLeft((720/n)+1)
     goForward(360/n)
     nDegreesRight((360/n))
   }  
