@@ -23,6 +23,11 @@ $("#spiral-button").click(function() {
   nSpiral(typeOfSpiral)
 })
 
+$("#spiral-ring-button").click(function() { 
+  var typeOfSpiralRing = $("#spiral-ring").val()
+  nSpiralRing(typeOfSpiralRing)
+})
+
 
 function nPoints(n) {
   for (i=0; i<n; i++) {
